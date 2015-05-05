@@ -23,9 +23,9 @@
         <property name="username" value="root" />
         <property name="password" value="derriqs" />
     </bean>
-3
+
     <!---->
-    <bean id="sessionFactory"
+  <!--  <bean id="sessionFactory"
           class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <property name="annotatedClasses">
@@ -51,7 +51,7 @@
 
     <bean id="employeeDaoImpl" class="com.hello.dao.EmployeeDaoImpl" />
     <bean id="employeeServiceImpl" class="com.hello.services.EmployeeServiceImpl" />
-
+-->
     <bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/views/"/>
         <property name="suffix" value=".jsp"/>
