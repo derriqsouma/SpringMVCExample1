@@ -8,3 +8,14 @@
 127.0.0.1 - - [05/May/2015:12:03:24 +0300] "GET /SpringMVCExample/welcome HTTP/1.1" 200 79 http-bio-8080-exec-1 2988
 127.0.0.1 - - [05/May/2015:12:08:17 +0300] "GET /SpringMVCExample/welcome HTTP/1.1" 200 80 http-bio-8080-exec-1 2771
 127.0.0.1 - - [05/May/2015:12:08:22 +0300] "GET /SpringMVCExample/index HTTP/1.1" 200 90 http-bio-8080-exec-3 7
+127.0.0.1 - - [05/May/2015:15:10:19 +0300] "GET /SpringMVCExample/index HTTP/1.1" 500 17201 http-bio-8080-exec-1 2763
+127.0.0.1 - - [05/May/2015:15:11:51 +0300] "GET /SpringMVCExample/index HTTP/1.1" 200 431 http-bio-8080-exec-1 6421
+127.0.0.1 - - [05/May/2015:15:12:03 +0300] "POST /SpringMVCExample/index HTTP/1.1" 200 431 http-bio-8080-exec-3 6
+127.0.0.1 - - [05/May/2015:15:28:35 +0300] "GET /SpringMVCExample/ HTTP/1.1" 404 949 http-bio-8080-exec-1 3481
+127.0.0.1 - - [05/May/2015:15:28:42 +0300] "GET /SpringMVCExample/index HTTP/1.1" 200 454 http-bio-8080-exec-3 1829
+127.0.0.1 - - [05/May/2015:15:35:04 +0300] "POST /SpringMVCExample/create HTTP/1.1" 200 455 http-bio-8080-exec-5 220623
+127.0.0.1 - - [05/May/2015:15:37:25 +0300] "POST /SpringMVCExample/create HTTP/1.1" 200 406 http-bio-8080-exec-7 47879
+127.0.0.1 - - [05/May/2015:15:42:49 +0300] "GET /SpringMVCExample/index HTTP/1.1" 200 454 http-bio-8080-exec-1 3660
+127.0.0.1 - - [05/May/2015:15:43:48 +0300] "GET /SpringMVCExample/list HTTP/1.1" 500 3694 http-bio-8080-exec-3 36556
+127.0.0.1 - - [05/May/2015:15:46:38 +0300] "GET /SpringMVCExample/list HTTP/1.1" 404 1013 http-bio-8080-exec-1 56841
+127.0.0.1 - - [05/May/2015:16:01:24 +0300] "GET /SpringMVCExample/list HTTP/1.1" 404 1013 http-bio-8080-exec-1 3838

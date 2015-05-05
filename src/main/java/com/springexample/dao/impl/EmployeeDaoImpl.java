@@ -1,9 +1,12 @@
-package com.springexample.dao;
+package com.springexample.dao.impl;
 
+import com.springexample.dao.EmployeeDao;
 import com.springexample.models.Employee;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.transaction.Transactional;
@@ -30,8 +33,22 @@ public class EmployeeDaoImpl implements EmployeeDao {
     }
 
     @Override
+    public Employee getEmployeeById(int id) {
+        Session session = sessionFactory.openSession();
+        Criteria criteria = session.createCriteria(Employee.class);
+        criteria.add(Restrictions.eq("id", id));
+        Employee employee = (Employee) criteria.uniqueResult();
+        session.close();
+        return employee;
+    }
+
+    @Override
     public List<Employee> getList() {
-        return null;
+        Session session = sessionFactory.openSession();
+        @SuppressWarnings("unchecked")
+        List<Employee> employeeList = session.createQuery("from Employee").list();
+        session.close();
+        return employeeList;
     }
 
     @Override
